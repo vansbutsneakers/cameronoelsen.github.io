@@ -1,0 +1,441 @@
+/** Bootstrap overrides **/
+.navbar-default .navbar-toggle {
+    border: none;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #f5f5f5;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #616161;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.navbar {
+    height: 116px;
+    margin-bottom: 0px;
+    background-color: white;
+    border-radius: 0px;
+}
+.footer {
+    height: 120px;
+    border-top: 1PX solid #E0E0E0;
+    background-color: #FAFAFA;
+    margin-top: 32px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.footer-nav-item{
+    display: inline-block;
+    padding: 20px 16px;
+    color: #616161;
+    text-decoration: none;
+}
+.footer-nav-item:hover {
+    color: #616161;
+    text-decoration: none;
+}
+.footer-nav-active {
+    color: #2D95F2;
+}
+.footer-nav-active:hover {
+    color: #2D95F2;
+    text-decoration: none;
+}
+.footer-copyright {
+    font-size: 14px;
+    color: #757575
+}
+.download-button {
+    display: block;
+    height: 48px;
+    width: 168px;
+    color: white;
+    background-color: #2D95F2;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .8px;
+    border: none;
+}
+.navbar-brand {
+    height: 116px;
+    padding-top: 34px;
+}
+.navbar-right {
+    padding-top: 34px;
+}
+.navbar-toggle {
+    margin-top: 41px;
+}
+.brand-image {
+    display: inline-block;
+    vertical-align: middle;
+}
+.landing-jumbotron {
+    background-color: transparent;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 116px;
+}
+.page-jumbotron {
+    background-color: #2D95F2;
+    height: 200px;
+    color: white;
+}
+.jumbotron-product {
+    position: relative;
+    right: 35%;
+    width: 400px;
+    z-index: 1;
+}
+.front-jumbotron-text {
+    z-index: 3;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+}
+.app-store {
+    height: 64px;
+    margin-top: 36px;
+    margin-bottom: 20px;
+}
+.jumbotron-desktop-break {
+    display: inline-block;
+}
+.content-section {
+    background-color: white;
+    height: 100%;
+    padding: 60px 0px;
+}
+.content-section-top {
+    padding-top: 100px;
+}
+.description-left {
+    text-align: right;
+    padding-top: 72px;
+}
+.description-right {
+    text-align: left;
+}
+.section-header {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: .8px;
+}
+.section-subheader {
+    font-size: 14px;
+    line-height: 24px;
+}
+.mobile-replace-image {
+    display: none;
+}
+.faq-topic {
+    margin: 24px 0px;
+}
+.faq-question::before {
+    content: '+';
+    margin-right: 8px;
+}
+.expand-answer::before {
+    content: '-';
+}
+.faq-topic p {
+    color: #757575;
+}
+.faq-question {
+    cursor: pointer;
+    line-height: 1.4;
+    letter-spacing: .4px;
+}
+.faq-question:hover {
+    color: #2196F3;
+}
+.faq-answer {
+    display: none;
+}
+.services-col-1 {
+    padding: 0px 24px 0px 8px;
+}
+.services-col-2 {
+    padding-right: 8px;
+}
+.services-table-row {
+    line-height: 1.8;
+}
+.services-table-row:hover {
+    background-color: #FAFAFA;
+    border-radius: 4px;
+    cursor: default;
+}
+.container .playlyst-pulse {
+    border: 2px solid #2D95F2;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: 40%;
+    top: 138px;
+    -webkit-animation-name: playlyst-pulse;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1.6s;
+    -webkit-animation-iteration-count: infinite;
+    z-index: -1;
+}
+@-webkit-keyframes playlyst-pulse {
+    0% {
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        padding: 0;
+    }
+    100% {
+        border: 10px solid #2D95F2;
+        border-radius: 400px;
+        -webkit-border-radius: 400px;
+        left: -50%;
+        padding: 250px;
+        top: 68px;
+        opacity: 0;
+        
+    }
+}
+.content-seperator {
+    border: 1px solid #E0E0E0;
+    width: 90%;
+    display: none;
+    margin: 0 auto;
+    
+}
+@media (max-width: 1200px) {
+    .page-jumbotron {
+        height: 250px;
+    }
+}
+@media (max-width: 992px) {
+    .jumbotron-product {
+        left: 40%;
+        margin-top: -80px;
+    }
+    .mobile-replace-image {
+        display: block;
+    }
+    .desk-replace-image {
+        display: none;
+    }
+    .section-header {
+        text-align: left;
+    }
+    .section-subheader {
+        text-align: left;
+    }
+    .image-right {
+        display: block;
+        margin: 0 auto;
+    }
+    .description-left, .description-right {
+        padding-top: 12px;
+        text-align: center;
+    }
+    .section-header, .section-subheader {
+        text-align: center;
+    }
+    .page-jumbotron {
+        height: 200px;
+    }
+    .container .playlyst-pulse {
+        border: 2px solid #2D95F2;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        height: 0px;
+        width: 0px;
+        position: absolute;
+        left: 80%;
+        top: 138px;
+        -webkit-animation-name: playlyst-pulse;
+        -webkit-animation-delay: 1s;
+        -webkit-animation-duration: 1.6s;
+        -webkit-animation-iteration-count: infinite;
+        z-index: -1;
+    }
+    @-webkit-keyframes playlyst-pulse {
+        0% {
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            padding: 0;
+        }
+        100% {
+            border: 10px solid #2D95F2;
+            border-radius: 400px;
+            -webkit-border-radius: 400px;
+            left: 28%;
+            padding: 250px;
+            top: -20px;
+            opacity: 0;
+        }
+}
+    .content-seperator {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .jumbotron-product {
+        display: block;
+        margin: 0 auto;
+        left: auto;
+        right: auto;
+        margin-top: 60px;
+        width: 70%;
+        height: auto;
+        min-width: 300px;
+    }
+    .page-jumbotron {
+        height: 140px;
+    }
+    .page-jumbotron-text {
+        font-size: 36px;
+    }
+    .container .playlyst-pulse {
+        position: absolute;
+        left: 50%;
+        top: 138px;
+        -webkit-animation-name: playlyst-pulse;
+        -webkit-animation-delay: 1s;
+        -webkit-animation-duration: 1.6s;
+        -webkit-animation-iteration-count: infinite;
+        z-index: -1;
+    }
+    @-webkit-keyframes playlyst-pulse {
+        0% {
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            padding: 0;
+        }
+        100% {
+            border: 10px solid #2D95F2;
+            border-radius: 400px;
+            -webkit-border-radius: 400px;
+            left: 12%;
+            padding: 250px;
+            top: -20px;
+            opacity: 0;
+        }
+}
+}
+@media (max-width: 650px) {
+    .container .playlyst-pulse {
+        left: 50%;
+        top: 138px;
+        -webkit-animation-name: playlyst-pulse;
+        -webkit-animation-delay: 1s;
+        -webkit-animation-duration: 1.6s;
+        -webkit-animation-iteration-count: infinite;
+        z-index: -1;
+    }
+    @-webkit-keyframes playlyst-pulse {
+        0% {
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            padding: 0;
+        }
+        100% {
+            border: 10px solid #2D95F2;
+            border-radius: 400px;
+            -webkit-border-radius: 400px;
+            left: 12%;
+            padding: 200px;
+            top: -20px;
+            opacity: 0;
+        }
+}
+}
+@media (max-width: 550px) {
+    .container .playlyst-pulse {
+        left: 50%;
+        top: 138px;
+    }
+    @-webkit-keyframes playlyst-pulse {
+        0% {
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            padding: 0;
+        }
+        100% {
+            border: 10px solid #2D95F2;
+            border-radius: 400px;
+            -webkit-border-radius: 400px;
+            left: 12%;
+            padding: 175px;
+            top: -20px;
+            opacity: 0;
+        }
+}
+}
+@media (max-width: 525px) {
+    .jumbotron-desktop-break {
+        display: none;
+    }
+}
+@media (max-width: 519px) {
+    .page-jumbotron {
+        height: 180px;
+    }
+}
+@media (max-width: 490px) {
+    .front-jumbotron-text {
+        font-size: 36px;
+    }
+    .container .playlyst-pulse {
+        left: 50%;
+        top: 138px;
+    }
+    @-webkit-keyframes playlyst-pulse {
+        0% {
+            border: 10px solid #2D95F2;
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            padding: 0;
+            opacity: 1;
+        }
+        95% {
+            border: 10px solid #2D95F2;
+        }
+        97% {
+            border-color: white;
+        }
+        100% {
+            border: 0px solid white;
+            border-radius: 400px;
+            -webkit-border-radius: 400px;
+            left: 10%;
+            padding: 150px;
+            top: -20px;
+            opacity: 0;
+        }
+    }
+    .navbar {
+        height: 80px;
+    }
+    .navbar-brand {
+        padding-top: 20px;
+    }
+    .brand-image {
+        height: 40px;
+    }
+    .navbar-toggle {
+        margin-top: 24px;
+    }
+    .landing-jumbotron {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 422px) {
+    .page-jumbotron {
+        height: 275px;
+    }
+    .page-jumbotron {
+        height: 180px;
+    }
+}
